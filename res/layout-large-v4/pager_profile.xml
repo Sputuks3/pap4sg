@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res-auto" mi:background="0x106000b" mi:layout_width="match_parent" mi:layout_height="UNKNOWN_DATA_0x7f090023">
+    <ImageView mi:layout_width="match_parent" mi:layout_height="match_parent" mi:src="@drawable/bg_profile" mi:scaleType="fitXY" />
+    <RelativeLayout mi:layout_width="match_parent" mi:layout_height="wrap_content">
+        <ImageView mi:id="@+id/img_quote" mi:visibility="gone" mi:layout_width="UNKNOWN_DATA_0x7f090028" mi:layout_height="UNKNOWN_DATA_0x7f090028" mi:layout_marginTop="@dimen/text_margin" mi:src="@drawable/ic_small_quote" mi:layout_alignParentTop="true" mi:layout_centerHorizontal="true" />
+        <sg.org.pap.pickle.ui.pickle.StyledTextView mi:textSize="@dimen/quote_text_size" mi:textColor="0x106000b" mi:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" mi:id="@+id/tv_quote" mi:layout_width="match_parent" mi:layout_height="wrap_content" mi:layout_marginLeft="@dimen/text_margin" mi:layout_marginTop="@dimen/top_quote_margin" mi:layout_marginRight="@dimen/text_margin" mi:text="
+
+
+" mi:maxLines="@integer/quote_max_lines_home" mi:layout_below="@+id/img_quote" mi:lineSpacingExtra="@dimen/quote_spacing_home" mi:font="MyriadPro-Semibold.otf" />
+        <de.hdodenhof.circleimageview.CircleImageView mi:id="@+id/profile_image" mi:layout_width="UNKNOWN_DATA_0x7f090026" mi:layout_height="UNKNOWN_DATA_0x7f090026" mi:layout_marginTop="@dimen/top_quote_margin" mi:layout_below="@+id/tv_quote" mi:layout_centerHorizontal="true" mi:border_width="@dimen/profile_border" mi:border_color="0x106000b" />
+        <sg.org.pap.pickle.ui.pickle.StyledTextView mi:textAppearance="@style/Base_TextAppearance_AppCompat_Medium" mi:textStyle="bold" mi:textColor="0x106000c" mi:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" mi:id="@+id/tv_name" mi:layout_width="match_parent" mi:layout_height="wrap_content" mi:layout_marginLeft="@dimen/double_text_margin" mi:layout_marginTop="@dimen/neg_control_spacing" mi:text="" mi:layout_below="@+id/profile_image" mi:layout_centerHorizontal="true" mi:font="MyriadPro-Bold.otf" />
+        <sg.org.pap.pickle.ui.pickle.StyledTextView mi:textAppearance="@style/Base_TextAppearance_AppCompat_Small" mi:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" mi:id="@+id/tv_town" mi:layout_width="match_parent" mi:layout_height="wrap_content" mi:layout_marginLeft="@dimen/double_text_margin" mi:layout_marginTop="@dimen/neg_control_spacing" mi:layout_marginBottom="@dimen/control_spacing" mi:text="" mi:layout_below="@+id/tv_name" mi:layout_centerHorizontal="true" mi:font="MyriadPro-Light.otf" />
+    </RelativeLayout>
+    <ImageView mi:id="@+id/img_photo_const" mi:visibility="gone" mi:layout_width="match_parent" mi:layout_height="wrap_content" mi:src="@drawable/bg_profile" />
+</FrameLayout>

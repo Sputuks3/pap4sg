@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res-auto">
+    <item app:icon="@drawable/ic_action_camera" app:id="@+id/action_sticker" app:title="@string/sticker" app:showAsAction="always" />
+</menu>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res-auto" coverflow:orientation="vertical" coverflow:layout_width="match_parent" coverflow:layout_height="match_parent">
+    <include coverflow:id="@+id/toolbar" layout="@layout/span_toolbar" />
+    <it.moondroid.coverflow.components.ui.containers.FeatureCoverFlow coverflow:id="@+id/coverflow" coverflow:layout_width="match_parent" coverflow:layout_height="wrap_content" coverflow:coverWidth="@dimen/cover_width" coverflow:coverHeight="@dimen/cover_height" coverflow:spacing="0.6" coverflow:rotationThreshold="0.5" coverflow:scalingThreshold="0.5" coverflow:maxScaleFactor="1.5" coverflow:reflectionGap="0px" />
+    <TextSwitcher coverflow:id="@+id/titleswitch" coverflow:paddingBottom="16dp" coverflow:layout_width="match_parent" coverflow:layout_height="wrap_content" coverflow:layout_alignParentBottom="true" coverflow:layout_centerVertical="true" />
+</LinearLayout>

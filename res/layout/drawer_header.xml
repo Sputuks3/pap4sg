@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res-auto" mi:orientation="vertical" mi:layout_width="match_parent" mi:layout_height="match_parent">
+    <ImageView mi:id="@+id/img_town" mi:layout_width="match_parent" mi:layout_height="wrap_content" />
+    <sg.org.pap.pickle.ui.pickle.StyledTextView mi:textAppearance="@style/Base_TextAppearance_AppCompat_Medium" mi:textStyle="bold" mi:textColor="0x106000c" mi:id="@+id/tv_name" mi:layout_width="match_parent" mi:layout_height="wrap_content" mi:layout_marginLeft="@dimen/double_text_margin" mi:layout_marginTop="@dimen/control_spacing" mi:layout_marginBottom="@dimen/control_spacing" mi:text="" mi:layout_below="@+id/img_divider" mi:font="MyriadPro-Bold.otf" />
+    <sg.org.pap.pickle.ui.pickle.StyledTextView mi:textAppearance="@style/Base_TextAppearance_AppCompat_Medium" mi:id="@+id/tv_town" mi:layout_width="match_parent" mi:layout_height="wrap_content" mi:layout_marginLeft="@dimen/double_text_margin" mi:layout_marginTop="@dimen/control_spacing" mi:layout_marginBottom="@dimen/control_spacing" mi:text="" mi:layout_below="@+id/img_divider" mi:font="MyriadPro-Light.otf" />
+    <ImageView mi:id="@+id/img_divider" mi:layout_width="match_parent" mi:layout_height="wrap_content" mi:layout_marginLeft="@dimen/double_text_margin" mi:layout_marginTop="-8dp" mi:layout_marginRight="@dimen/double_text_margin" mi:src="@drawable/dark_gray_line" mi:layout_below="@+id/tv_greeting" />
+</LinearLayout>

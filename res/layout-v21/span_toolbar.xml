@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res-auto" mi:background="0x1060016" mi:layout_width="match_parent" mi:layout_height="wrap_content" mi:elevation="4dp" mi:titleTextAppearance="@style/ToolbarTitleTextAppearance" mi:theme="@style/ToolbarColoredBackArrow">
+    <sg.org.pap.pickle.ui.pickle.StyledTextView mi:textAppearance="@style/Base_TextAppearance_AppCompat_Large" mi:gravity="top|bottom|center_vertical|fill_vertical|center|fill" mi:id="@+id/title" mi:layout_width="wrap_content" mi:layout_height="wrap_content" mi:text="@string/day" mi:maxLines="1" mi:font="MuseoSans500.otf" />
+</android.support.v7.widget.Toolbar>

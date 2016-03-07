@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res-auto">
+    <group mi:checkableBehavior="single">
+        <item mi:theme="@style/NavigationViewThemeOverlay" mi:id="@+id/nav_news" mi:title="@string/news" />
+        <item mi:id="@+id/nav_manifest" mi:title="@string/manifesto" mi:theme="@style/ToolbarTheme" />
+        <item mi:id="@+id/nav_yayf" mi:title="@string/you_family" mi:theme="@style/ToolbarTheme" />
+        <item mi:id="@+id/nav_candidates" mi:title="@string/candidates" mi:theme="@style/ToolbarTheme" />
+        <item mi:id="@+id/nav_touch" mi:title="@string/keep_touch" mi:theme="@style/ToolbarTheme" />
+        <item mi:id="@+id/nav_prefs" mi:title="@string/prefereces" mi:theme="@style/ToolbarTheme" />
+        <item mi:id="@+id/nav_town" mi:title="@string/town_council" mi:theme="@style/ToolbarTheme" />
+    </group>
+</menu>

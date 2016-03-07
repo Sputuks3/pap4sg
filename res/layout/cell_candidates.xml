@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" mi:background="@drawable/cell_candidate_bg" mi:focusable="true" mi:clickable="true" mi:layout_width="match_parent" mi:layout_height="wrap_content" mi:animateLayoutChanges="true">
+    <ImageView mi:id="@+id/img_prof" mi:layout_width="UNKNOWN_DATA_0x7f09000a" mi:layout_height="UNKNOWN_DATA_0x7f090009" mi:layout_marginRight="@dimen/double_text_margin" mi:src="@drawable/man_grey" mi:scaleType="fitXY" mi:adjustViewBounds="true" mi:layout_alignParentLeft="true" mi:layout_alignParentTop="true" />
+    <LinearLayout mi:orientation="vertical" mi:layout_width="match_parent" mi:layout_height="wrap_content" mi:layout_toRightOf="@+id/img_prof" mi:layout_centerVertical="true">
+        <sg.org.pap.pickle.ui.pickle.StyledTextView mi:textAppearance="@style/Base_TextAppearance_AppCompat_Medium" mi:textStyle="bold" mi:textColor="0x106000c" mi:id="@+id/tv_name" mi:layout_width="match_parent" mi:layout_height="wrap_content" mi:layout_margin="@dimen/control_spacing" mi:text="Indranee Thurai Rajah" mi:layout_alignParentTop="true" mi:font="MyriadPro-Bold.otf" />
+        <sg.org.pap.pickle.ui.pickle.StyledTextView mi:textAppearance="@style/Base_TextAppearance_AppCompat_Medium" mi:textColor="@color/dark_gray" mi:id="@+id/tv_region" mi:layout_width="match_parent" mi:layout_height="wrap_content" mi:layout_margin="@dimen/control_spacing" mi:text="Tanjong Pagar GRC" mi:font="MyriadPro-Light.otf" />
+    </LinearLayout>
+</RelativeLayout>

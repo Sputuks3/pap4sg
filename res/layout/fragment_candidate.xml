@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="0x106000b" android:layout_width="match_parent" android:layout_height="match_parent" android:animateLayoutChanges="true">
+    <LinearLayout android:id="@+id/choices" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <sg.org.pap.pickle.ui.pickle.StyledButton android:textColor="@drawable/switch_text_color" android:id="@+id/btn_my_reps" android:background="@drawable/switch_selector" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:minHeight="@dimen/choice_height" android:text="@string/my_reps" android:layout_weight="1.0" />
+        <sg.org.pap.pickle.ui.pickle.StyledButton android:textColor="@drawable/switch_text_color" android:id="@+id/btn_all" android:background="@drawable/switch_selector" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:minHeight="@dimen/choice_height" android:text="@string/all" android:layout_weight="1.0" />
+    </LinearLayout>
+    <com.marshalchen.ultimaterecyclerview.UltimateRecyclerView android:id="@+id/list" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/choices" />
+    <ProgressBar android:id="@+id/pb_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+</RelativeLayout>

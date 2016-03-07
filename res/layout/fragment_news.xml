@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" mi:background="@color/light_gray" mi:layout_width="match_parent" mi:layout_height="match_parent" mi:animateLayoutChanges="true">
+    <ProgressBar mi:id="@+id/pb_loading" mi:visibility="gone" mi:layout_width="wrap_content" mi:layout_height="wrap_content" mi:layout_marginBottom="@dimen/item_margin" mi:layout_alignParentBottom="true" mi:layout_centerHorizontal="true" />
+    <android.support.v4.view.ViewPager mi:id="@+id/pager" mi:layout_width="match_parent" mi:layout_height="UNKNOWN_DATA_0x7f090023" />
+    <com.viewpagerindicator.CirclePageIndicator mi:id="@+id/circles" mi:layout_width="wrap_content" mi:layout_height="wrap_content" mi:layout_marginBottom="@dimen/control_spacing" mi:layout_below="@+id/pager" mi:layout_centerHorizontal="true" />
+    <LinearLayout mi:id="@+id/choices" mi:background="0x106000b" mi:layout_width="match_parent" mi:layout_height="wrap_content" mi:layout_below="@+id/circles">
+        <sg.org.pap.pickle.ui.pickle.StyledButton mi:textColor="@drawable/switch_text_color" mi:id="@+id/btn_news" mi:background="@drawable/switch_selector" mi:layout_width="UNKNOWN_DATA_0x1" mi:layout_height="wrap_content" mi:text="@string/news" mi:layout_weight="1.0" mi:font="MyriadPro-Regular.otf" />
+        <sg.org.pap.pickle.ui.pickle.StyledButton mi:textColor="@drawable/switch_text_color" mi:id="@+id/btn_tweet" mi:background="@drawable/switch_selector" mi:layout_width="UNKNOWN_DATA_0x1" mi:layout_height="wrap_content" mi:text="@string/twit" mi:layout_weight="1.0" mi:font="MyriadPro-Regular.otf" />
+    </LinearLayout>
+    <sg.org.pap.pickle.ui.widgets.CustomSwipeToRefresh mi:id="@+id/refresh_list" mi:layout_width="match_parent" mi:layout_height="wrap_content" mi:layout_below="@+id/choices">
+        <ListView mi:id="@+id/listView" mi:scrollbars="UNKNOWN_DATA_0x0" mi:layout_width="match_parent" mi:layout_height="wrap_content" mi:divider="#9e9e9e" mi:dividerHeight="1dp" />
+    </sg.org.pap.pickle.ui.widgets.CustomSwipeToRefresh>
+</RelativeLayout>

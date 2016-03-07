@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" mi:layout_width="match_parent" mi:layout_height="match_parent" mi:animateLayoutChanges="true">
+    <include mi:id="@+id/toolbar" layout="@layout/span_toolbar" />
+    <ScrollView mi:background="0x106000b" mi:clickable="true" mi:layout_width="match_parent" mi:layout_height="match_parent" mi:layout_below="@+id/toolbar">
+        <RelativeLayout mi:layout_width="match_parent" mi:layout_height="match_parent">
+            <LinearLayout mi:orientation="horizontal" mi:id="@+id/foreword_layout" mi:visibility="gone" mi:layout_width="match_parent" mi:layout_height="wrap_content" mi:layout_marginLeft="@dimen/item_margin" mi:layout_marginTop="@dimen/item_margin" mi:layout_marginRight="@dimen/control_spacing">
+                <sg.org.pap.pickle.ui.pickle.StyledTextView mi:textAppearance="@style/Base_TextAppearance_AppCompat_Large_Inverse" mi:textSize="@dimen/title_font_size" mi:textColor="0x106000c" mi:id="@+id/tv_foreword_title" mi:layout_width="UNKNOWN_DATA_0x1" mi:layout_height="wrap_content" mi:layout_margin="@dimen/double_text_margin" mi:text="" mi:layout_weight="1.0" mi:font="MyriadPro-Bold.otf" />
+                <Button mi:textColor="0x1060013" mi:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" mi:id="@+id/btn_replay" mi:layout_width="UNKNOWN_DATA_0x1" mi:layout_height="wrap_content" mi:minHeight="0dp" mi:text="@string/replay" mi:drawableLeft="@drawable/ic_av_play_circle_fill_small" mi:layout_weight="0.8" />
+            </LinearLayout>
+            <FrameLayout mi:id="@+id/frame" mi:layout_width="match_parent" mi:layout_height="wrap_content" mi:layout_below="@+id/foreword_layout">
+                <ImageView mi:id="@+id/img_image" mi:layout_width="wrap_content" mi:layout_height="wrap_content" />
+                <ImageView mi:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" mi:id="@+id/btn_play" mi:layout_width="match_parent" mi:layout_height="match_parent" mi:src="@drawable/ic_av_play_circle_outline" />
+            </FrameLayout>
+            <RelativeLayout mi:id="@+id/layout_header" mi:background="0x1060013" mi:layout_width="match_parent" mi:layout_height="wrap_content" mi:layout_below="@+id/frame">
+                <LinearLayout mi:orientation="horizontal" mi:id="@+id/title_layout" mi:paddingLeft="@dimen/item_margin" mi:paddingRight="@dimen/item_margin" mi:layout_width="match_parent" mi:layout_height="wrap_content">
+                    <sg.org.pap.pickle.ui.pickle.StyledTextView mi:textAppearance="@style/Base_TextAppearance_AppCompat_Large_Inverse" mi:id="@+id/tv_title" mi:layout_width="UNKNOWN_DATA_0x1" mi:layout_height="wrap_content" mi:layout_margin="@dimen/double_text_margin" mi:text="" mi:layout_weight="1.0" mi:font="MyriadPro-Bold.otf" />
+                    <sg.org.pap.pickle.ui.pickle.StyledButton mi:id="@+id/btn_player" mi:visibility="gone" mi:layout_width="UNKNOWN_DATA_0x1" mi:layout_height="wrap_content" mi:layout_marginTop="@dimen/double_text_margin" mi:text="Replay" mi:layout_weight="0.5" mi:font="MyriadPro-Bold.otf" />
+                </LinearLayout>
+                <sg.org.pap.pickle.ui.pickle.StyledTextView mi:textAppearance="@style/Base_TextAppearance_AppCompat_Small_Inverse" mi:id="@+id/tv_timestamp" mi:visibility="gone" mi:layout_width="match_parent" mi:layout_height="wrap_content" mi:layout_marginLeft="@dimen/double_double_text_margin" mi:layout_marginRight="@dimen/text_margin" mi:text="Wednesday, 08 April 2015" mi:layout_below="@+id/title_layout" mi:font="MyriadPro-Bold.otf" />
+            </RelativeLayout>
+            <sg.org.pap.pickle.ui.pickle.StyledTextView mi:textAppearance="@style/Base_TextAppearance_AppCompat_Medium_Inverse" mi:textColor="@color/dark_gray" mi:id="@+id/tv_content" mi:visibility="gone" mi:layout_width="match_parent" mi:layout_height="match_parent" mi:layout_marginLeft="@dimen/double_text_margin" mi:layout_marginTop="@dimen/double_double_text_margin" mi:layout_marginRight="@dimen/double_text_margin" mi:layout_marginBottom="@dimen/double_text_margin" mi:layout_below="@+id/layout_header" mi:font="MyriadPro-Regular.otf" />
+            <WebView mi:id="@+id/webview" mi:layout_width="match_parent" mi:layout_height="wrap_content" mi:layout_marginLeft="@dimen/double_text_margin" mi:layout_marginTop="@dimen/double_double_text_margin" mi:layout_marginRight="@dimen/double_text_margin" mi:layout_below="@+id/layout_header" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

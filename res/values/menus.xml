@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <menu name="global">res/menu/global.xml</menu>
+    <menu name="home">res/menu/home.xml</menu>
+    <menu name="menu_candidate_detail">res/menu/menu_candidate_detail.xml</menu>
+    <menu name="menu_candidate_flow">res/menu/menu_candidate_flow.xml</menu>
+    <menu name="menu_manifest_detail">res/menu/menu_manifest_detail.xml</menu>
+    <menu name="menu_message">res/menu/menu_message.xml</menu>
+    <menu name="menu_news_detail">res/menu/menu_news_detail.xml</menu>
+    <menu name="menu_onboarding">res/menu/menu_onboarding.xml</menu>
+    <menu name="menu_sticker">res/menu/menu_sticker.xml</menu>
+    <menu name="menu_video_player">res/menu/menu_video_player.xml</menu>
+    <menu name="menu_youtube_news_detail">res/menu/menu_youtube_news_detail.xml</menu>
+    <menu name="navigation_items">res/menu/navigation_items.xml</menu>
+    <menu name="squarecamera__menu_blank">res/menu/squarecamera__menu_blank.xml</menu>
+    <menu name="squarecamera__menu_main">res/menu/squarecamera__menu_main.xml</menu>
+</resources>

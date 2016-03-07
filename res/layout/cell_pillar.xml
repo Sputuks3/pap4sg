@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res-auto" mi:focusable="true" mi:clickable="true" mi:layout_width="match_parent" mi:layout_height="UNKNOWN_DATA_0x7f090019">
+    <ImageView mi:id="@+id/img_bg" mi:layout_width="match_parent" mi:layout_height="match_parent" mi:scaleType="fitXY" />
+    <LinearLayout mi:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" mi:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" mi:orientation="vertical" mi:layout_width="match_parent" mi:layout_height="match_parent">
+        <sg.org.pap.pickle.ui.pickle.StyledTextView mi:textAppearance="@style/Base_TextAppearance_AppCompat_Large" mi:textStyle="bold" mi:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" mi:id="@+id/tv_title" mi:layout_width="match_parent" mi:layout_height="wrap_content" mi:text="@string/day" mi:shadowColor="0x106000c" mi:shadowDx="2.0" mi:shadowDy="4.0" mi:shadowRadius="15.0" mi:font="MyriadPro-Bold.otf" />
+        <sg.org.pap.pickle.ui.pickle.StyledTextView mi:textAppearance="@style/Base_TextAppearance_AppCompat_Medium" mi:textColor="0x106000b" mi:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" mi:id="@+id/tv_subtitle" mi:layout_width="match_parent" mi:layout_height="wrap_content" mi:layout_margin="@dimen/text_margin" mi:text="@string/day" mi:shadowColor="0x106000c" mi:shadowDx="2.0" mi:shadowDy="4.0" mi:shadowRadius="15.0" mi:font="MyriadPro-Regular.otf" />
+    </LinearLayout>
+</FrameLayout>

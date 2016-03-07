@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory>
+        <EditTextPreference android:title="@string/pref_name" android:key="name_preferences" android:dialogTitle="@string/pref_name" />
+        <EditTextPreference android:title="@string/pref_postal" android:key="postal_preferences" android:dialogTitle="@string/pref_postal" android:inputType="number|numberSigned|numberDecimal|numberPassword|phone" />
+        <EditTextPreference android:title="@string/pref_email" android:key="email_preferences" android:dialogTitle="@string/pref_email" android:inputType="text|textCapCharacters|textCapWords|textCapSentences|textAutoCorrect|textAutoComplete|textMultiLine|textImeMultiLine|textNoSuggestions|textUri|textEmailAddress|textEmailSubject|textShortMessage|textLongMessage|textPersonName|textPostalAddress|textPassword|textVisiblePassword|textWebEditText|textFilter|textPhonetic|textWebEmailAddress|textWebPassword|phone|time" />
+        <CheckBoxPreference android:title="@string/pref_news_letter" android:key="sign_up" android:summary="@string/pref_news_letter_sub" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="">
+        <PreferenceScreen android:title="@string/pref_pdpa" android:key="pdpa_preference">
+            <intent android:action="org.sg.pap.pdpa" />
+        </PreferenceScreen>
+        <PreferenceScreen android:title="@string/pref_terms" android:key="terms_preferences">
+            <intent android:action="org.sg.pap.terms" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+</PreferenceScreen>

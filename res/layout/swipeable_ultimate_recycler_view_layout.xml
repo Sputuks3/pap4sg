@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" fab:layout_width="match_parent" fab:layout_height="match_parent">
+    <com.marshalchen.ultimaterecyclerview.ui.VerticalSwipeRefreshLayout fab:id="@+id/swipe_refresh_layout" fab:layout_width="match_parent" fab:layout_height="match_parent">
+        <com.marshalchen.ultimaterecyclerview.swipelistview.SwipeListView fab:id="@+id/ultimate_list" fab:focusableInTouchMode="true" fab:layout_width="match_parent" fab:layout_height="match_parent" />
+    </com.marshalchen.ultimaterecyclerview.ui.VerticalSwipeRefreshLayout>
+    <com.marshalchen.ultimaterecyclerview.ui.floatingactionbutton.AddFloatingActionButton fab:id="@+id/defaultFloatingActionButton" fab:visibility="gone" fab:layout_width="wrap_content" fab:layout_height="wrap_content" fab:layout_marginRight="15dp" fab:layout_marginBottom="15dp" fab:layout_alignParentRight="true" fab:layout_alignParentBottom="true" fab:plusIconColor="#808080" fab:colorNormal="#ffffff" />
+    <ViewStub fab:id="@+id/floatingActionViewStub" fab:visibility="gone" fab:layout_width="wrap_content" fab:layout_height="wrap_content" fab:layout_marginRight="15dp" fab:layout_marginBottom="15dp" fab:layout_alignParentRight="true" fab:layout_alignParentBottom="true" />
+    <ViewStub fab:id="@+id/emptyview" fab:visibility="gone" fab:layout_width="match_parent" fab:layout_height="match_parent" fab:layout_centerInParent="true" />
+</RelativeLayout>

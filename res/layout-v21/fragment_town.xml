@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" mi:layout_width="match_parent" mi:layout_height="match_parent" mi:animateLayoutChanges="true">
+    <ScrollView mi:layout_width="match_parent" mi:layout_height="match_parent">
+        <RelativeLayout mi:id="@+id/layout_content" mi:visibility="visible" mi:layout_width="match_parent" mi:layout_height="match_parent">
+            <ImageView mi:id="@+id/img_header" mi:layout_width="match_parent" mi:layout_height="wrap_content" mi:src="@drawable/morning_bg" />
+            <RelativeLayout mi:id="@+id/rl_hotline" mi:background="@drawable/cell_bg" mi:paddingLeft="@dimen/item_margin" mi:layout_width="match_parent" mi:layout_height="wrap_content" mi:layout_below="@+id/img_header">
+                <sg.org.pap.pickle.ui.pickle.StyledTextView mi:textAppearance="@style/Base_TextAppearance_AppCompat_Small" mi:textColor="0x1060013" mi:id="@+id/tv_title_hotline" mi:layout_width="match_parent" mi:layout_height="wrap_content" mi:layout_margin="@dimen/control_spacing" mi:text="@string/hotline" mi:layout_below="@+id/img_divider" mi:font="MyriadPro-Light.otf" />
+                <sg.org.pap.pickle.ui.pickle.StyledTextView mi:textAppearance="@style/Base_TextAppearance_AppCompat_Medium" mi:id="@+id/tv_hotline" mi:layout_width="match_parent" mi:layout_height="wrap_content" mi:layout_margin="@dimen/control_spacing" mi:text="" mi:layout_below="@+id/tv_title_hotline" mi:font="MyriadPro-Light.otf" />
+                <ImageView mi:layout_width="UNKNOWN_DATA_0x7f090029" mi:layout_height="UNKNOWN_DATA_0x7f090029" mi:layout_margin="@dimen/item_margin" mi:src="@drawable/ic_call" mi:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <RelativeLayout mi:id="@+id/rl_email" mi:background="@drawable/cell_bg" mi:paddingLeft="@dimen/item_margin" mi:layout_width="match_parent" mi:layout_height="wrap_content" mi:layout_below="@+id/rl_hotline">
+                <sg.org.pap.pickle.ui.pickle.StyledTextView mi:textAppearance="@style/Base_TextAppearance_AppCompat_Small" mi:textColor="0x1060013" mi:id="@+id/tv_title_email" mi:layout_width="match_parent" mi:layout_height="wrap_content" mi:layout_margin="@dimen/control_spacing" mi:text="@string/email" mi:layout_below="@+id/img_divider" mi:font="MyriadPro-Light.otf" />
+                <sg.org.pap.pickle.ui.pickle.StyledTextView mi:textAppearance="@style/Base_TextAppearance_AppCompat_Medium" mi:id="@+id/tv_email" mi:layout_width="match_parent" mi:layout_height="wrap_content" mi:layout_margin="@dimen/control_spacing" mi:text="" mi:layout_below="@+id/tv_title_email" mi:font="MyriadPro-Light.otf" />
+                <ImageView mi:layout_width="UNKNOWN_DATA_0x7f090029" mi:layout_height="UNKNOWN_DATA_0x7f090029" mi:layout_margin="@dimen/item_margin" mi:src="@drawable/ic_email" mi:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <RelativeLayout mi:id="@+id/rl_web" mi:background="@drawable/cell_bg" mi:paddingLeft="@dimen/item_margin" mi:layout_width="match_parent" mi:layout_height="wrap_content" mi:layout_below="@+id/rl_email">
+                <sg.org.pap.pickle.ui.pickle.StyledTextView mi:textAppearance="@style/Base_TextAppearance_AppCompat_Small" mi:textColor="0x1060013" mi:id="@+id/tv_title_website" mi:layout_width="match_parent" mi:layout_height="wrap_content" mi:layout_margin="@dimen/control_spacing" mi:text="@string/website" mi:layout_below="@+id/img_divider" mi:font="MyriadPro-Light.otf" />
+                <sg.org.pap.pickle.ui.pickle.StyledTextView mi:textAppearance="@style/Base_TextAppearance_AppCompat_Medium" mi:id="@+id/tv_website" mi:layout_width="match_parent" mi:layout_height="wrap_content" mi:layout_margin="@dimen/control_spacing" mi:text="" mi:layout_below="@+id/tv_title_website" mi:font="MyriadPro-Light.otf" />
+                <ImageView mi:layout_width="UNKNOWN_DATA_0x7f090029" mi:layout_height="UNKNOWN_DATA_0x7f090029" mi:layout_margin="@dimen/item_margin" mi:src="@drawable/ic_web" mi:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <RelativeLayout mi:id="@+id/rl_address" mi:background="@drawable/cell_bg" mi:paddingLeft="@dimen/item_margin" mi:layout_width="match_parent" mi:layout_height="wrap_content" mi:layout_below="@+id/rl_web">
+                <sg.org.pap.pickle.ui.pickle.StyledTextView mi:textAppearance="@style/Base_TextAppearance_AppCompat_Small" mi:textColor="0x1060013" mi:id="@+id/tv_title_address" mi:layout_width="match_parent" mi:layout_height="wrap_content" mi:layout_margin="@dimen/control_spacing" mi:text="@string/address" mi:layout_below="@+id/img_divider" mi:font="MyriadPro-Light.otf" />
+                <sg.org.pap.pickle.ui.pickle.StyledTextView mi:textAppearance="@style/Base_TextAppearance_AppCompat_Medium" mi:id="@+id/tv_address" mi:layout_width="match_parent" mi:layout_height="wrap_content" mi:layout_margin="@dimen/control_spacing" mi:text="" mi:layout_below="@+id/tv_title_address" mi:font="MyriadPro-Light.otf" />
+                <com.google.android.gms.maps.MapView mi:id="@+id/map" mi:layout_width="match_parent" mi:layout_height="UNKNOWN_DATA_0x7f09001b" mi:layout_margin="@dimen/control_spacing" mi:layout_below="@+id/tv_address" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <ProgressBar mi:id="@+id/pb_loading" mi:layout_width="wrap_content" mi:layout_height="wrap_content" mi:layout_centerInParent="true" mi:indeterminateTint="0x1060013" mi:indeterminateTintMode="src_atop" />
+</RelativeLayout>

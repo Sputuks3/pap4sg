@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res-auto" mi:orientation="vertical" mi:layout_width="match_parent" mi:layout_height="wrap_content"
+    <LinearLayout mi:id="@+id/choices" mi:layout_width="match_parent" mi:layout_height="wrap_content" mi:layout_below="@+id/pager">
+        <sg.org.pap.pickle.ui.pickle.StyledButton mi:textColor="@drawable/switch_text_color" mi:id="@+id/btn_news" mi:background="@drawable/switch_selector" mi:layout_width="UNKNOWN_DATA_0x1" mi:layout_height="wrap_content" mi:text="@string/news" mi:layout_weight="1.0" mi:font="MyriadPro-Semibold.otf" />
+        <sg.org.pap.pickle.ui.pickle.StyledButton mi:textColor="@drawable/switch_text_color" mi:id="@+id/btn_tweet" mi:background="@drawable/switch_selector" mi:layout_width="UNKNOWN_DATA_0x1" mi:layout_height="wrap_content" mi:text="@string/twit" mi:layout_weight="1.0" mi:font="MyriadPro-Semibold.otf" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" mi:layout_width="match_parent" mi:layout_height="match_parent" mi:animateLayoutChanges="true">
+    <include mi:id="@+id/toolbar" layout="@layout/span_toolbar" />
+    <ScrollView mi:background="0x106000b" mi:clickable="true" mi:layout_width="match_parent" mi:layout_height="match_parent" mi:layout_below="@+id/toolbar">
+        <RelativeLayout mi:layout_width="match_parent" mi:layout_height="match_parent">
+            <LinearLayout mi:orientation="horizontal" mi:id="@+id/title_layout" mi:layout_width="match_parent" mi:layout_height="wrap_content" mi:layout_marginLeft="@dimen/item_margin" mi:layout_marginTop="@dimen/item_margin" mi:layout_marginRight="@dimen/item_margin">
+                <sg.org.pap.pickle.ui.pickle.StyledTextView mi:textAppearance="@style/Base_TextAppearance_AppCompat_Large_Inverse" mi:textSize="@dimen/title_font_size" mi:textColor="0x106000c" mi:id="@+id/tv_title" mi:layout_width="UNKNOWN_DATA_0x1" mi:layout_height="wrap_content" mi:layout_margin="@dimen/double_text_margin" mi:text="Deepest Gratitude to Our Founding Father" mi:layout_weight="1.0" mi:font="MyriadPro-Bold.otf" />
+            </LinearLayout>
+            <sg.org.pap.pickle.ui.pickle.StyledTextView mi:textAppearance="@style/Base_TextAppearance_AppCompat_Small_Inverse" mi:textColor="@color/dark_gray" mi:id="@+id/tv_timestamp" mi:layout_width="match_parent" mi:layout_height="wrap_content" mi:layout_marginLeft="@dimen/double_double_text_margin" mi:text="Wednesday, 08 April 2015" mi:layout_below="@+id/title_layout" mi:font="MyriadPro-Bold.otf" />
+            <FrameLayout mi:id="@+id/frame" mi:layout_width="match_parent" mi:layout_height="wrap_content" mi:layout_below="@+id/tv_timestamp">
+                <ImageView mi:id="@+id/img_image" mi:layout_width="wrap_content" mi:layout_height="wrap_content" mi:layout_marginTop="@dimen/item_margin" />
+                <ImageView mi:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" mi:id="@+id/btn_play" mi:layout_width="match_parent" mi:layout_height="match_parent" mi:src="@drawable/ic_av_play_circle_outline" />
+            </FrameLayout>
+            <sg.org.pap.pickle.ui.pickle.StyledTextView mi:textAppearance="@style/Base_TextAppearance_AppCompat_Medium_Inverse" mi:textColor="@color/dark_gray" mi:id="@+id/tv_content" mi:visibility="gone" mi:layout_width="match_parent" mi:layout_height="match_parent" mi:layout_marginLeft="@dimen/double_text_margin" mi:layout_marginTop="@dimen/double_double_text_margin" mi:layout_marginRight="@dimen/double_text_margin" mi:layout_marginBottom="@dimen/double_text_margin" mi:text="Wednesday, 08 April 2015" mi:layout_below="@+id/frame" mi:font="MyriadPro-Regular.otf" />
+            <WebView mi:id="@+id/webview" mi:layout_width="match_parent" mi:layout_height="wrap_content" mi:layout_marginLeft="@dimen/double_text_margin" mi:layout_marginRight="@dimen/double_text_margin" mi:layout_below="@+id/frame" />
+            <sg.org.pap.pickle.ui.pickle.StyledButton mi:textColor="0x106000b" mi:id="@+id/btn_features" mi:background="@drawable/blue_btn_selector" mi:visibility="gone" mi:layout_width="match_parent" mi:layout_height="wrap_content" mi:layout_margin="@dimen/double_text_margin" mi:text="@string/see_candidate" mi:layout_below="@+id/webview" mi:font="MyriadPro-Semibold.otf" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

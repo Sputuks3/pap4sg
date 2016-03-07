@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" fab:layout_width="match_parent" fab:layout_height="match_parent">
+    <in.srain.cube.views.ptr.PtrFrameLayout cube_ptr:id="@+id/store_house_ptr_frame" cube_ptr:background="#333333" cube_ptr:layout_width="match_parent" cube_ptr:layout_height="match_parent" cube_ptr:ptr_resistance="1.7" cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2" cube_ptr:ptr_duration_to_close="200" cube_ptr:ptr_duration_to_close_header="1000" cube_ptr:ptr_pull_to_fresh="false" cube_ptr:ptr_keep_header_when_refresh="true">
+        <android.support.v7.widget.RecyclerView cube_ptr:id="@+id/ultimate_list" cube_ptr:background="#ffffff" cube_ptr:layout_width="match_parent" cube_ptr:layout_height="match_parent" />
+    </in.srain.cube.views.ptr.PtrFrameLayout>
+    <com.marshalchen.ultimaterecyclerview.ui.floatingactionbutton.AddFloatingActionButton cube_ptr:id="@+id/defaultFloatingActionButton" cube_ptr:visibility="gone" cube_ptr:layout_width="wrap_content" cube_ptr:layout_height="wrap_content" cube_ptr:layout_marginRight="15dp" cube_ptr:layout_marginBottom="15dp" cube_ptr:layout_alignParentRight="true" cube_ptr:layout_alignParentBottom="true" cube_ptr:plusIconColor="#808080" cube_ptr:colorNormal="#ffffff" />
+    <ViewStub cube_ptr:id="@+id/floatingActionViewStub" cube_ptr:visibility="gone" cube_ptr:layout_width="wrap_content" cube_ptr:layout_height="wrap_content" cube_ptr:layout_marginRight="15dp" cube_ptr:layout_marginBottom="15dp" cube_ptr:layout_alignParentRight="true" cube_ptr:layout_alignParentBottom="true" />
+    <ViewStub cube_ptr:id="@+id/emptyview" cube_ptr:visibility="gone" cube_ptr:layout_width="match_parent" cube_ptr:layout_height="match_parent" cube_ptr:layout_centerInParent="true" />
+</RelativeLayout>

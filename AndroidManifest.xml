@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="16" android:versionName="3.0" package="sg.org.pap.pickle" platformBuildVersionCode="23" platformBuildVersionName="6.0-2166767">
+    <uses-sdk android:minSdkVersion="15" android:targetSdkVersion="23" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" android:required="true" />
+    <permission android:name="sg.org.pap.pickle.permission.C2D_MESSAGE" android:protectionLevel="signature|signatureOrSystem" />
+    <uses-permission android:name="sg.org.pap.pickle.permission.C2D_MESSAGE" />
+    <uses-feature android:glEsVersion="20000" android:required="true" />
+    <application android:theme="@style/AppsTheme" android:label="@string/app_name" android:icon="@drawable/ic_launcher" android:name="sg.org.pap.pickle.ui.pickle.PickleApp" android:allowBackup="true">
+        <receiver android:name="com.google.android.gms.gcm.GcmReceiver" android:permission="com.google.android.c2dm.permission.SEND" android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <category android:name="sg.org.pap.pickle" />
+            </intent-filter>
+        </receiver>
+        <service android:name="sg.org.pap.pickle.ui.pickle.PickleGCMListenerService" android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+            </intent-filter>
+        </service>
+        <service android:name="sg.org.pap.pickle.ui.pickle.PickleIDListenerService" android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID" />
+            </intent-filter>
+        </service>
+        <meta-data android:name="sg.org.pap.pickle.ui.pickle.GlideConfiguration" android:value="GlideModule" />
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyAi1ihpj1wR89E4y2M1VW0cX_ly8-tjso4" />
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id" />
+        <activity android:theme="@style/Theme_AppCompat_NoActionBar" android:label="@string/app_name" android:name="sg.org.pap.pickle.ui.activities.OnboardingActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|adjustNothing">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/title_activity_home" android:name="sg.org.pap.pickle.ui.activities.HomeActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="oauth" android:host="t4jsample" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/title_activity_news_detail" android:name="sg.org.pap.pickle.ui.activities.NewsDetailActivity" android:screenOrientation="portrait" android:parentActivityName="sg.org.pap.pickle.ui.activities.HomeActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="sg.org.pap.pickle.ui.activities.HomeActivity" />
+        </activity>
+        <activity android:label="@string/title_activity_candidate_detail" android:name="sg.org.pap.pickle.ui.activities.CandidateDetail" android:screenOrientation="portrait" android:parentActivityName="sg.org.pap.pickle.ui.activities.HomeActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="sg.org.pap.pickle.ui.activities.HomeActivity" />
+        </activity>
+        <activity android:label="@string/title_activity_manifest_detail" android:name="sg.org.pap.pickle.ui.activities.ManifestDetailActivity" android:screenOrientation="portrait" android:parentActivityName="sg.org.pap.pickle.ui.activities.HomeActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="sg.org.pap.pickle.ui.activities.HomeActivity" />
+        </activity>
+        <activity android:label="@string/title_activity_message" android:name="sg.org.pap.pickle.ui.activities.MessageActivity" android:screenOrientation="portrait" android:parentActivityName="sg.org.pap.pickle.ui.activities.HomeActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="sg.org.pap.pickle.ui.activities.HomeActivity" />
+            <intent-filter>
+                <action android:name="org.sg.pap.pdpa" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="org.sg.pap.terms" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme_AppCompat_NoActionBar" android:label="@string/title_activity_video_player" android:name="sg.org.pap.pickle.ui.activities.WebplayerActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/NoTitleDialog" android:label="@string/title_activity_video_player" android:name="sg.org.pap.pickle.ui.activities.VideoPlayerActivity" />
+        <activity android:theme="@style/Theme_AppCompat_NoActionBar" android:label="@string/title_activity_video_player" android:name="sg.org.pap.pickle.ui.activities.WebviewActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="myscheme" />
+            </intent-filter>
+        </activity>
+        <service android:name="sg.org.pap.pickle.ui.pickle.RegistrationIntentService" android:exported="false" />
+        <activity android:label="@string/title_activity_sticker" android:name="sg.org.pap.pickle.ui.activities.StickerActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.desmond.squarecamera.CameraActivity" />
+        <activity android:label="@string/title_activity_candidate_flow" android:name="sg.org.pap.pickle.ui.activities.CandidateFlowActivity" android:screenOrientation="portrait" />
+        <activity android:label="@string/title_activity_youtube_news_detail" android:name="sg.org.pap.pickle.ui.activities.YoutubeNewsDetailActivity" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:label="@string/app_name" android:name="com.facebook.FacebookActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" />
+    </application>
+</manifest>

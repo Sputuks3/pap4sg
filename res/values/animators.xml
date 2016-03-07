@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <animator name="anim_fade_from_left">res/animator/anim_fade_from_left.xml</animator>
+    <animator name="anim_fade_from_right">res/animator/anim_fade_from_right.xml</animator>
+    <animator name="anim_fade_to_left">res/animator/anim_fade_to_left.xml</animator>
+    <animator name="anim_fade_to_right">res/animator/anim_fade_to_right.xml</animator>
+</resources>

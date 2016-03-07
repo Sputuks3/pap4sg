@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" mi:background="0x106000b" mi:layout_width="match_parent" mi:layout_height="match_parent" mi:animateLayoutChanges="true">
+    <include mi:id="@+id/toolbar" layout="@layout/span_toolbar" />
+    <ProgressBar mi:id="@+id/loading" mi:visibility="gone" mi:layout_width="UNKNOWN_DATA_0x7f090002" mi:layout_height="UNKNOWN_DATA_0x7f090002" mi:layout_below="@+id/toolbar" mi:layout_centerInParent="true" mi:indeterminateTint="0x1060013" mi:indeterminateTintMode="src_atop" />
+    <ScrollView mi:visibility="gone" mi:layout_width="match_parent" mi:layout_height="match_parent" mi:layout_below="@+id/toolbar">
+        <sg.org.pap.pickle.ui.pickle.StyledTextView mi:textAppearance="@style/Base_TextAppearance_AppCompat_Large" mi:textColor="0x106000c" mi:id="@+id/tv_content" mi:layout_width="match_parent" mi:layout_height="wrap_content" mi:layout_margin="@dimen/item_margin" mi:layout_marginTop="@dimen/double_text_margin" mi:text="" mi:font="MyriadPro-Regular.otf" />
+    </ScrollView>
+    <WebView mi:id="@+id/web" mi:layout_width="match_parent" mi:layout_height="wrap_content" mi:layout_marginLeft="@dimen/double_text_margin" mi:layout_marginRight="@dimen/double_text_margin" mi:layout_below="@+id/toolbar" />
+</RelativeLayout>

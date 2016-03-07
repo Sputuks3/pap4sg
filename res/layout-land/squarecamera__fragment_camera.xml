@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.desmond.squarecamera.SquareCameraPreview android:id="@+id/camera_preview_view" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <View android:id="@+id/cover_top_view" android:background="0x106000c" android:layout_width="UNKNOWN_DATA_0x7f0900be" android:layout_height="match_parent" android:layout_alignLeft="@+id/camera_preview_view" />
+    <View android:id="@+id/cover_bottom_view" android:background="0x106000c" android:layout_width="UNKNOWN_DATA_0x7f0900be" android:layout_height="match_parent" android:layout_alignRight="@+id/camera_preview_view" />
+    <LinearLayout android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="vertical" android:id="@+id/camera_tools_view" android:background="0x106000c" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_toRightOf="@+id/camera_preview_view" android:layout_alignParentRight="true"
+        <LinearLayout android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:orientation="horizontal" android:id="@+id/flash" android:layout_width="wrap_content" android:layout_height="UNKNOWN_DATA_0x1" android:layout_weight="1.0">
+            <ImageView android:id="@+id/flash_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/squarecamera__toggle_flash" />
+            <TextView android:textSize="14sp" android:textColor="0x106000b" android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/auto_flash_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:text="Auto" />
+        </LinearLayout>
+        <ImageView android:id="@+id/capture_image_button" android:layout_width="wrap_content" android:layout_height="UNKNOWN_DATA_0x1" android:src="@drawable/squarecamera__capture_photo_button" android:layout_weight="1.0" />
+        <ImageView android:id="@+id/change_camera" android:layout_width="wrap_content" android:layout_height="UNKNOWN_DATA_0x1" android:src="@drawable/squarecamera__camera" android:layout_weight="1.0" />
+    </LinearLayout>
+</RelativeLayout>

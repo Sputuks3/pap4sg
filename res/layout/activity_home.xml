@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res-auto" mi:id="@+id/drawer_layout" mi:layout_width="match_parent" mi:layout_height="match_parent">
+    <RelativeLayout mi:layout_width="match_parent" mi:layout_height="match_parent">
+        <include mi:id="@+id/toolbar" layout="@layout/span_toolbar" />
+        <ProgressBar mi:id="@+id/pb_loading" mi:visibility="gone" mi:layout_width="wrap_content" mi:layout_height="wrap_content" mi:layout_centerInParent="true" />
+        <FrameLayout mi:id="@+id/container" mi:layout_width="match_parent" mi:layout_height="match_parent" mi:layout_below="@+id/toolbar" />
+    </RelativeLayout>
+    <android.support.design.widget.NavigationView mi:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" mi:id="@+id/navigation" mi:background="0x106000b" mi:layout_width="wrap_content" mi:layout_height="match_parent" mi:menu="@menu/navigation_items" mi:itemTextColor="0x106000c" mi:theme="@style/NavigationViewThemeOverlay" />
+</android.support.v4.widget.DrawerLayout>

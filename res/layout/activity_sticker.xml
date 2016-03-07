@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" mi:id="@+id/layout_main" mi:layout_width="match_parent" mi:layout_height="match_parent" mi:animateLayoutChanges="true">
+    <include mi:id="@+id/toolbar" layout="@layout/span_toolbar" />
+    <ImageView mi:id="@+id/img_preview" mi:visibility="gone" mi:layout_width="match_parent" mi:layout_height="match_parent" mi:adjustViewBounds="true" mi:layout_above="@+id/layout_action" mi:layout_below="@+id/toolbar" />
+    <com.marshalchen.ultimaterecyclerview.UltimateRecyclerView mi:id="@+id/grid_sticker" mi:layout_width="match_parent" mi:layout_height="UNKNOWN_DATA_0x7f09002e" mi:layout_alignParentBottom="true" mi:layout_centerHorizontal="true" />
+    <LinearLayout mi:orientation="horizontal" mi:id="@+id/layout_action" mi:visibility="gone" mi:layout_width="match_parent" mi:layout_height="wrap_content" mi:layout_alignParentBottom="true">
+        <sg.org.pap.pickle.ui.pickle.StyledButton mi:textColor="0x106000b" mi:id="@+id/btn_save" mi:background="@drawable/red_btn_selector" mi:layout_width="UNKNOWN_DATA_0x1" mi:layout_height="wrap_content" mi:layout_margin="@dimen/double_text_margin" mi:text="@string/save" mi:layout_weight="1.0" mi:font="MyriadPro-Semibold.otf" />
+        <sg.org.pap.pickle.ui.pickle.StyledButton mi:textColor="0x106000b" mi:id="@+id/btn_share" mi:background="@drawable/red_btn_selector" mi:layout_width="UNKNOWN_DATA_0x1" mi:layout_height="wrap_content" mi:layout_margin="@dimen/double_text_margin" mi:text="@string/share" mi:layout_weight="1.0" mi:font="MyriadPro-Semibold.otf" />
+    </LinearLayout>
+</RelativeLayout>

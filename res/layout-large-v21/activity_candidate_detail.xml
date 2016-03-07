@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" mi:background="0x106000b" mi:layout_width="match_parent" mi:layout_height="match_parent">
+    <include mi:id="@+id/toolbar" layout="@layout/span_toolbar" />
+    <ProgressBar mi:id="@+id/pb_loading" mi:visibility="gone" mi:layout_width="wrap_content" mi:layout_height="wrap_content" mi:layout_centerInParent="true" mi:indeterminateTint="0x1060013" mi:indeterminateTintMode="src_atop" />
+    <ScrollView mi:id="@+id/values" mi:visibility="gone" mi:layout_width="match_parent" mi:layout_height="match_parent" mi:layout_below="@+id/toolbar">
+        <RelativeLayout mi:layout_width="match_parent" mi:layout_height="match_parent">
+            <include mi:id="@+id/profile" layout="@layout/page_profile" />
+            <FrameLayout mi:id="@+id/frame" mi:layout_width="match_parent" mi:layout_height="wrap_content" mi:layout_below="@+id/profile">
+                <ImageView mi:id="@+id/img_image" mi:layout_width="wrap_content" mi:layout_height="wrap_content" mi:layout_marginTop="@dimen/item_margin" />
+                <ImageView mi:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" mi:id="@+id/btn_play" mi:layout_width="match_parent" mi:layout_height="match_parent" mi:src="@drawable/ic_av_play_circle_outline" />
+            </FrameLayout>
+            <LinearLayout mi:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" mi:orientation="horizontal" mi:id="@+id/social_links" mi:background="@drawable/cell_bg" mi:layout_width="match_parent" mi:layout_height="wrap_content" mi:layout_marginTop="@dimen/item_margin" mi:layout_below="@+id/frame">
+                <ImageButton mi:id="@+id/btn_fb" mi:background="@drawable/ic_social_fb" mi:layout_width="UNKNOWN_DATA_0x7f090029" mi:layout_height="UNKNOWN_DATA_0x7f090029" mi:layout_margin="@dimen/item_margin" />
+                <ImageButton mi:id="@+id/btn_ig" mi:background="@drawable/ic_social_instagram" mi:layout_width="UNKNOWN_DATA_0x7f090029" mi:layout_height="UNKNOWN_DATA_0x7f090029" mi:layout_margin="@dimen/item_margin" />
+                <ImageButton mi:id="@+id/btn_tw" mi:background="@drawable/ic_social_twitter" mi:layout_width="UNKNOWN_DATA_0x7f090029" mi:layout_height="UNKNOWN_DATA_0x7f090029" mi:layout_margin="@dimen/item_margin" />
+                <ImageButton mi:id="@+id/btn_pin" mi:background="@drawable/ic_social_pin" mi:layout_width="UNKNOWN_DATA_0x7f090029" mi:layout_height="UNKNOWN_DATA_0x7f090029" mi:layout_margin="@dimen/item_margin" />
+            </LinearLayout>
+            <LinearLayout mi:orientation="vertical" mi:background="0x106000b" mi:layout_width="match_parent" mi:layout_height="match_parent" mi:layout_below="@+id/social_links">
+                <RelativeLayout mi:id="@+id/rl_twitter" mi:background="@drawable/cell_bg" mi:paddingLeft="@dimen/item_margin" mi:layout_width="match_parent" mi:layout_height="wrap_content">
+                    <sg.org.pap.pickle.ui.pickle.StyledTextView mi:textAppearance="@style/Base_TextAppearance_AppCompat_Medium" mi:textColor="0x1060013" mi:id="@+id/tv_title_twitter" mi:layout_width="wrap_content" mi:layout_height="wrap_content" mi:layout_margin="@dimen/control_spacing" mi:text="@string/twitter" mi:font="MyriadPro-Light.otf" />
+                    <sg.org.pap.pickle.ui.pickle.StyledTextView mi:textAppearance="@style/Base_TextAppearance_AppCompat_Medium" mi:id="@+id/tv_twitter" mi:layout_width="match_parent" mi:layout_height="wrap_content" mi:layout_margin="@dimen/control_spacing" mi:text="" mi:layout_toLeftOf="@+id/img_twitter" mi:layout_below="@+id/tv_title_twitter" mi:font="MyriadPro-Light.otf" />
+                    <ImageView mi:id="@+id/img_twitter" mi:layout_width="UNKNOWN_DATA_0x7f090029" mi:layout_height="UNKNOWN_DATA_0x7f090029" mi:layout_margin="@dimen/item_margin" mi:src="@drawable/ic_social_twitter" mi:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <RelativeLayout mi:id="@+id/rl_facebook" mi:background="@drawable/cell_bg" mi:paddingLeft="@dimen/item_margin" mi:layout_width="match_parent" mi:layout_height="wrap_content">
+                    <sg.org.pap.pickle.ui.pickle.StyledTextView mi:textAppearance="@style/Base_TextAppearance_AppCompat_Medium" mi:textColor="0x1060013" mi:id="@+id/tv_title_facebook" mi:layout_width="wrap_content" mi:layout_height="wrap_content" mi:layout_margin="@dimen/control_spacing" mi:text="@string/facebook" mi:font="MyriadPro-Light.otf" />
+                    <sg.org.pap.pickle.ui.pickle.StyledTextView mi:textAppearance="@style/Base_TextAppearance_AppCompat_Medium" mi:id="@+id/tv_facebook" mi:layout_width="match_parent" mi:layout_height="wrap_content" mi:layout_margin="@dimen/control_spacing" mi:text="" mi:layout_toLeftOf="@+id/img_fb" mi:layout_below="@+id/tv_title_facebook" mi:font="MyriadPro-Light.otf" />
+                    <ImageView mi:id="@+id/img_fb" mi:layout_width="UNKNOWN_DATA_0x7f090029" mi:layout_height="UNKNOWN_DATA_0x7f090029" mi:layout_margin="@dimen/item_margin" mi:src="@drawable/ic_social_fb" mi:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <RelativeLayout mi:id="@+id/rl_instagram" mi:background="@drawable/cell_bg" mi:paddingLeft="@dimen/item_margin" mi:layout_width="match_parent" mi:layout_height="wrap_content">
+                    <sg.org.pap.pickle.ui.pickle.StyledTextView mi:textAppearance="@style/Base_TextAppearance_AppCompat_Medium" mi:textColor="0x1060013" mi:id="@+id/tv_title_instagram" mi:layout_width="wrap_content" mi:layout_height="wrap_content" mi:layout_margin="@dimen/control_spacing" mi:text="@string/instagram" mi:font="MyriadPro-Light.otf" />
+                    <sg.org.pap.pickle.ui.pickle.StyledTextView mi:textAppearance="@style/Base_TextAppearance_AppCompat_Medium" mi:id="@+id/tv_instagram" mi:layout_width="match_parent" mi:layout_height="wrap_content" mi:layout_margin="@dimen/control_spacing" mi:text="" mi:layout_toLeftOf="@+id/img_insta" mi:layout_below="@+id/tv_title_instagram" mi:font="MyriadPro-Light.otf" />
+                    <ImageView mi:id="@+id/img_insta" mi:layout_width="UNKNOWN_DATA_0x7f090029" mi:layout_height="UNKNOWN_DATA_0x7f090029" mi:layout_margin="@dimen/item_margin" mi:src="@drawable/ic_social_instagram" mi:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <RelativeLayout mi:id="@+id/rl_pinterest" mi:background="@drawable/cell_bg" mi:paddingLeft="@dimen/item_margin" mi:layout_width="match_parent" mi:layout_height="wrap_content">
+                    <sg.org.pap.pickle.ui.pickle.StyledTextView mi:textAppearance="@style/Base_TextAppearance_AppCompat_Medium" mi:textColor="0x1060013" mi:id="@+id/tv_title_pinterest" mi:layout_width="wrap_content" mi:layout_height="wrap_content" mi:layout_margin="@dimen/control_spacing" mi:text="@string/pinterest" mi:font="MyriadPro-Light.otf" />
+                    <sg.org.pap.pickle.ui.pickle.StyledTextView mi:textAppearance="@style/Base_TextAppearance_AppCompat_Medium" mi:id="@+id/tv_pinterest" mi:layout_width="match_parent" mi:layout_height="wrap_content" mi:layout_margin="@dimen/control_spacing" mi:text="" mi:layout_toLeftOf="@+id/img_pint" mi:layout_below="@+id/tv_title_pinterest" mi:font="MyriadPro-Light.otf" />
+                    <ImageView mi:id="@+id/img_pint" mi:layout_width="UNKNOWN_DATA_0x7f090029" mi:layout_height="UNKNOWN_DATA_0x7f090029" mi:layout_margin="@dimen/item_margin" mi:src="@drawable/ic_social_pin" mi:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <RelativeLayout mi:id="@+id/rl_email" mi:background="@drawable/cell_bg" mi:paddingLeft="@dimen/item_margin" mi:layout_width="match_parent" mi:layout_height="wrap_content">
+                    <sg.org.pap.pickle.ui.pickle.StyledTextView mi:textAppearance="@style/Base_TextAppearance_AppCompat_Medium" mi:textColor="0x1060013" mi:id="@+id/tv_title_email" mi:layout_width="wrap_content" mi:layout_height="wrap_content" mi:layout_margin="@dimen/control_spacing" mi:text="@string/email" mi:font="MyriadPro-Light.otf" />
+                    <sg.org.pap.pickle.ui.pickle.StyledTextView mi:textAppearance="@style/Base_TextAppearance_AppCompat_Medium" mi:id="@+id/tv_email" mi:layout_width="match_parent" mi:layout_height="wrap_content" mi:layout_margin="@dimen/control_spacing" mi:text="" mi:layout_toLeftOf="@+id/img_email" mi:layout_below="@+id/tv_title_email" mi:font="MyriadPro-Light.otf" />
+                    <ImageView mi:id="@+id/img_email" mi:layout_width="UNKNOWN_DATA_0x7f090029" mi:layout_height="UNKNOWN_DATA_0x7f090029" mi:layout_margin="@dimen/item_margin" mi:src="@drawable/ic_email" mi:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <RelativeLayout mi:id="@+id/rl_web" mi:background="@drawable/cell_bg" mi:paddingLeft="@dimen/item_margin" mi:layout_width="match_parent" mi:layout_height="wrap_content">
+                    <sg.org.pap.pickle.ui.pickle.StyledTextView mi:textAppearance="@style/Base_TextAppearance_AppCompat_Medium" mi:textColor="0x1060013" mi:id="@+id/tv_title_website" mi:layout_width="wrap_content" mi:layout_height="wrap_content" mi:layout_margin="@dimen/control_spacing" mi:text="@string/website" mi:font="MyriadPro-Light.otf" />
+                    <sg.org.pap.pickle.ui.pickle.StyledTextView mi:textAppearance="@style/Base_TextAppearance_AppCompat_Medium" mi:id="@+id/tv_website" mi:layout_width="match_parent" mi:layout_height="wrap_content" mi:layout_margin="@dimen/control_spacing" mi:text="" mi:layout_toLeftOf="@+id/img_web" mi:layout_below="@+id/tv_title_website" mi:font="MyriadPro-Light.otf" />
+                    <ImageView mi:id="@+id/img_web" mi:layout_width="UNKNOWN_DATA_0x7f090029" mi:layout_height="UNKNOWN_DATA_0x7f090029" mi:layout_margin="@dimen/item_margin" mi:src="@drawable/ic_web" mi:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <RelativeLayout mi:id="@+id/rl_branch" mi:background="@drawable/cell_bg" mi:paddingLeft="@dimen/item_margin" mi:layout_width="match_parent" mi:layout_height="wrap_content">
+                    <sg.org.pap.pickle.ui.pickle.StyledTextView mi:textAppearance="@style/Base_TextAppearance_AppCompat_Medium" mi:textColor="0x1060013" mi:id="@+id/tv_title_branch" mi:layout_width="wrap_content" mi:layout_height="wrap_content" mi:layout_margin="@dimen/control_spacing" mi:text="@string/branch" mi:font="MyriadPro-Light.otf" />
+                    <sg.org.pap.pickle.ui.pickle.StyledTextView mi:textAppearance="@style/Base_TextAppearance_AppCompat_Medium" mi:id="@+id/tv_branch" mi:layout_width="match_parent" mi:layout_height="wrap_content" mi:layout_margin="@dimen/control_spacing" mi:text="" mi:layout_below="@+id/tv_title_branch" mi:font="MyriadPro-Light.otf" />
+                    <ImageView mi:layout_width="UNKNOWN_DATA_0x7f090029" mi:layout_height="UNKNOWN_DATA_0x7f090029" mi:layout_margin="@dimen/item_margin" mi:layout_alignParentRight="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
