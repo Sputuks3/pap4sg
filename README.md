@@ -32,6 +32,8 @@ In the interest of transparency, this party has none. We Singaporeans are facing
 
 Much has happened to us over the past month, including the death of student Benjamin Lim and Dominique Lee. Fi anything it goes to show that this political party lacks transparency. Let's start with the app first. If that party cannot tolerate openess on a simple thing as an app, then hopefully this will really blow a hole in their cloak of secrecy.
 
+Please note, that if I can see the source code of your app, I can do the same to many other apps too. 
+
 I'll be uploading this code on other sites too.
 
 For media contact, email opr_nexus@yahoo.com
