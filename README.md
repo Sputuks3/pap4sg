@@ -28,7 +28,7 @@ Android apps are often created using the high-level Java computer programming la
 Rationale (and Rant)
 =========
 
-In the interest of transparency, this party has none. We Singaporeans are facing this behemoth for the past many decades of tyranny and non-accountability. In addition, the PAP says Singapore lacks talents in the ICT industry. This source code leak is testamount to the contrary.
+In the interest of transparency, this party has none. We Singaporeans are facing this behemoth for the past many decades of tyranny and non-accountability. In addition, the PAP says Singapore lacks talents in the ICT industry. This source code leak is testament to the contrary.
 
 Much has happened to us over the past month, including the death of student Benjamin Lim and Dominique Lee. Fi anything it goes to show that this political party lacks transparency. Let's start with the app first. If that party cannot tolerate openess on a simple thing as an app, then hopefully this will really blow a hole in their cloak of secrecy.
 
