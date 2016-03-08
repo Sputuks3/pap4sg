@@ -7,6 +7,8 @@ Link to the app on Google Play: https://play.google.com/store/apps/details?id=sg
 
 This is the source code for the #PAP4SG Android App. Normally, companies would not release the source code so easily. However, I was able to obtain it through a process called "Reverse Engineering".
 
+This article may be a little too technical for Singaporeans to appreciate. No worries, you may skip this section and move on to the section Rationale to understand why this project.
+
 Android (and iPhone) apps frequently use 3rd party software libraries ("software code") to implement awesome functionality for their apps.
 
 Through the Reverse Engineering, I was able to discover those libraries too. I shall list them here. Please Google to find out how to obtain those open-source code.
