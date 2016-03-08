@@ -12,9 +12,9 @@ Android (and iPhone) apps frequently use 3rd party software libraries ("software
 Through the Reverse Engineering, I was able to discover those libraries too. I shall list them here. Please Google to find out how to obtain those open-source code.
 
 - [com.desmond.squarecamera] (https://github.com/boxme/SquareCamera)
-- com.facebook Android/Java API
-- Google's YouTube Java API
-- com.marshalchen.ultimaterecyclerview
+- [com.facebook Android/Java API] (https://developers.facebook.com/docs/android/downloads)
+- [Google's YouTube Java API] (https://developers.google.com/youtube/android/player/downloads/)
+- [com.marshalchen.ultimaterecyclerview] (https://github.com/cymcsg/UltimateRecyclerView)
 - Spluk Analytics (com.splunk)
 - com.touchmenotapps.carousel
 - de.hdodenhof.circleimageview
