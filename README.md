@@ -5,7 +5,7 @@ Introduction
 
 Link to the app on Google Play: https://play.google.com/store/apps/details?id=sg.org.pap.pickle&hl=en
 
-This is the source code for the #PAP4SG Android App. Normally, companies would not release the source code so easily. However, I was able to obtain it through a process called "Reverse Engineering".
+This is the source code for the #PAP4SG Android App. Normally, companies would not release the source code so easily due to copyright and intellectual property. However, I was able to obtain it through a process called "Reverse Engineering".
 
 This article may be a little too technical for Singaporeans to appreciate. No worries, you may skip this section and move on to the section Rationale to understand why this project.
 
